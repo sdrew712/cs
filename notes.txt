@@ -1,0 +1,27 @@
+2.
+insert 1.086203209 s
+append 12.155875 ms
+
+3.
+insert
+xl 5.182334 ms
+L 508.125 μs
+m 246.458 μs
+s 57.5 μs
+tiny 3.417 μs
+
+append
+xl 1.084776541 s
+L 8.528625 ms
+m 1.199875 ms
+s 37.958 μs
+tiny 1.25 μs
+
+4. The tiny arrays start out at similar speeds, but as size increases, the difference
+becomes even more noticeable, with the XL array taking only 5 milliseconds with insert
+but a whole 1 second with append. This difference will become extremely important if you
+have a large project.
+
+5. Unshift is slower than push because it has to shift all of the elements over in order
+to add a new number to the beginning of the array, while push only has to add one element
+to the end of the array.
